@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>Javascript-DOM</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="#area1">O que é DOM</a></li>
+        <li><a href="#area2">Selecionando Elementos (4 funções)1</a></li>
+        <li><a href="#area3">Selecionando Elementos (4 funções)2</a></li>
+        <li><a href="#area4">Selecionando com querySelector</a></li>
+        <li><a href="#area5">Manipulando Class do elemento 1</a></li>
+        <li><a href="#area6">Manipulando Class do elemento 2</a></li>
+    </ul>
+    </nav>
+
+    <section>
+        <h1 id="area1"><em>O que é DOM?</em></h1>
+        <h3><em>DOM</em>: Document Object Model</h3>
+        <h3>Ele é a referencia dos elementos da página</h3>
+        <img src="../assets/images/domlogo.png"/>
+        <img src="../assets/images/arvoredom.jpeg"/>
+
+        <h1 id="area2"><em>Selecionando Elementos (4 funções)1</em></h1>
+        <h3>A primeira maneira é utilizando o comando <em>document.getElementById</em> que seleciona por<em>id</em></h3>
+        <h3 id="exemplo">A frase que irá aparecer aqui estará no JS</h3>
+        <ol type="I">
+            <li>HTML</li>
+            <img src="../assets/images/selement1.png"/>
+            <li>JS</li>
+            <img src="../assets/images/selement2.png"/>
+            <li>Página</li>
+            <img src="../assets/images/selement3.png"/>
+        </ol>
+        
+
+        <h1 id="area3"><em>Selecionando Elementos (4 funções)2</em></h1>
+        <h3>Outras fomas de selecionar o elmento com <em>DOM</em></h3>
+        <h3>Usando <em>document.getElementsByClassName</em> seleciona pela <em>class</em></h3>
+
+        <ol type="I">
+            <li>Ele sempre retorna com um <em>HTMLCollection</em> junto</li>
+            <img src="../assets/images/selement4.png"/>
+            <li>HTML</li>
+            <img src="../assets/images/selement5.png"/>
+            <li>JS</li>
+            <img src="../assets/images/selement5.1.png"/>
+            <li>Página</li>
+            <img src="../assets/images/selement6.png"/>
+            <li>Resultado</li>
+            <div class="lista">Ele retorna</div>
+            <div class="lista"> Ele retorna mais elementos</div>
+        </ol>
+        
+        <h3>Usando <em>document.getElementsByTagName</em>, seleciona pelo nome da <em>tag</em></h3>
+        <ol type="I">
+            <li>HTML</li>
+            <img src="../assets/images/selement7.1.png"/>
+            <li>JS</li>
+            <img src="../assets/images/selement7.png"/>
+            <li>Console</li>
+            <img src="../assets/images/selement8.png"/>
+            <li>Resultado</li>
+            <button>Botão</button>
+        </ol>
+        
+        <h3>Usando <em>document.getElementsByName</em>, seleciona pelo nome da <em>name</em></h3>
+        
+        <ol type="I">
+            <li>HTML</li>
+            <img src="../assets/images/selement9.png"/>
+            <li>Console</li>
+            <img src="../assets/images/selement10.png"/>
+            <li>Resultado</li>
+            <input type="text" name="email" placeholder="Digite seu e-mail"/>
+        </ol>
+
+        <h1 id="area4"><em>Selecionando com querySelector</em></h1>
+        <h3>Ele subistitui todos os anteriores, pois ele seleciona <em>id,class,tag e name</em></h3>
+        <ol type="I">
+            <li><em>document.querySelector</em>, seleciona o primeiro elemento</li>
+            <img src="../assets/images/query1.png"/>
+            <li><em>document.querySelectorAll</em>, seleciona o todos os elementos</li>
+            <img src="../assets/images/query2.png"/>
+        </ol>
+
+        <h1 id="area5"><em>Manipulando Class do elemento 1</em></h1>
+        <ol type="I">
+            <li>HTML</li>
+            <img src="../assets/images/class3.png"/>
+            <li>CSS</li>
+            <img src="../assets/images/class1.png"/>
+            <li>JS</li>
+            <img src="../assets/images/class2.png"/>
+            <li>Resultado</li>
+            <div id="dom">DOM</div>
+            <button onclick="verde()">Verde</button>
+            <button onclick="vermelho()">Vermelho</button>
+            <button onclick="azul()">Azul</button>
+        </ol>
+
+        <h1 id="area6"><em>Manipulando Class do elemento 2</em></h1>
+        <ol type="I">
+            <li>HTML</li>
+            <img src="../assets/images/class4.png"/>
+            <li>CSS</li>
+            <img src="../assets/images/class5.png"/>
+            <li>JS</li>
+            <img src="../assets/images/class6.png"/>
+            <li>Resultado</li>
+            <button class="preto" onclick="trocar()">Botão</button>
+        </ol>
+       
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+</body>

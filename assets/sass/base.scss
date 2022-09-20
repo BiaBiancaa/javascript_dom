@@ -1,0 +1,93 @@
+@import 'reset';
+@mixin girar($graus){
+transform:rotate($graus);
+-webkit-transform: rotate($graus);
+-moz-transform: rotate($graus);
+-ms-transform: rotate($graus);
+}
+$cor1:rgb(144, 205, 255);
+$cor2:rgb(107, 153, 252);
+$cor3:rgb(34, 137, 255);
+$cor4:#fff;
+$corhover:rgb(255, 251, 238);
+section{
+    padding: 10px;
+}
+h1{
+    border: 3px solid $cor1;
+    color:$cor2;
+    padding: 10px;
+}
+em{
+    color: $cor2;
+}
+li{
+    padding: 5px 0;
+}
+nav{
+    background-color:$cor3;
+    ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        padding: 10px;
+        a{
+            display: block;
+            background-color:$cor2 ;
+            padding: 10px;
+            text-decoration: none;
+            color: $cor4;
+
+            &:hover{
+                background-color:$corhover ;
+                color: $cor3;
+            }
+        }
+    }
+}
+a{
+    display:block;
+    background-color:$cor2 ;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: $cor4;
+
+    &:hover{
+        background-color:$corhover ;
+        color: $cor3;
+        }
+    }
+.logo{
+    img{
+        display: inline-block;
+        flex: 1;
+    }
+}
+
+#dom{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid gray;
+    text-align: center;
+}
+.verde{
+    background-color: green
+}
+.vermelho{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+.amarelo{
+    background-color: yellow;
+}
+.preto{
+    background-color: black;
+    color: #fff;
+}
