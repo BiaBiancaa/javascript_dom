@@ -7,12 +7,20 @@
 <body>
     <nav>
     <ul>
-        <li><a href="#area1">O que é DOM</a></li>
+        <li><a href="#area1">O que é DOM?</a></li>
         <li><a href="#area2">Selecionando Elementos (4 funções)1</a></li>
         <li><a href="#area3">Selecionando Elementos (4 funções)2</a></li>
         <li><a href="#area4">Selecionando com querySelector</a></li>
         <li><a href="#area5">Manipulando Class do elemento 1</a></li>
         <li><a href="#area6">Manipulando Class do elemento 2</a></li>
+        <li><a href="#area7">Tipos de dados</a></li>
+        <li><a href="#area8">Comentários</a></li>
+        <li><a href="#area9">Funções (1-2)</a></li>
+        <li><a href="#area10">Funções (2-2)</a></li>
+        <li><a href="#area11">Manipulando Atributos</a></li>
+        <li><a href="#area12">Dimensões</a></li>
+        <li><a href="#area13">Distâncias e Scroll Suave</a></li>
+        <li><a href="#area14">Resposta do Exercício Scroll</a></li>
     </ul>
     </nav>
 
@@ -113,6 +121,130 @@
             <button class="preto" onclick="trocar()">Botão</button>
         </ol>
        
+        <h1 id="area7"><em>Tipos de dados</em></h1>
+        <h3>Alguns tipos de <em>váriavel</em></h3>
+        <h3>Para saber o tipo da variável use o <em>typeof</em></h3>
+        <img src="../assets/images/tipos.png"/>
+        <ol type="I">
+            <li><em>var nome = "texto";</em>, váriaveis que possuem texto com aspas são chamadas de <em>string</em></li>
+            <li><em>var idade = 19;</em>, váriaveis que possuem números são chamadas de <em>number</em></li>
+            <li><em>var salvo = true;</em>, váriaveis que possuem texto sem aspas são chamadas de <em>boolean</em>, geralmente usadas para verdadeiro ou falso</li>
+            <li><em>var cidade;</em>, váriaveis que não tem valor são chamadas de <em>undefined</em></li>
+        </ol>
+
+        <h1 id="area8"><em>Comentários</em></h1>
+        <h3>Uma forma de esplicar <em>humanamente</em>, o que o código faz dentro do nosso projeto</h3>
+        <h3>Servem <em>exclusivamente</em> para o desenvolvedor</h3>
+        <h3>Existem dois tipos de comentários:</h3>
+        <ol type="I">
+            <li>Uma linha</li>
+            <img src="../assets/images/coment1.png"/>
+            <li>Multiplas linhas</li>
+            <img src="../assets/images/coment2.png"/>
+        </ol>
+
+
+        <h1 id="area9"><em>Funções (1-2)</em></h1>
+        <h3>É um <em>conjunto de códigos</em> que você cria e consegue utilizar quando quiser</h3>
+        <img src="../assets/images/função1.png"/>
+        <h4 id="titulo">Alguma coisa</h4>
+        <input id="campo" type="text" name="usuario" value="nome do usuário"/>
+
+        <h1 id="area10"><em>Funções (2-2)</em></h1>
+        <h3>O valor que fica entre parenteses é chamada de <em>parametro</em></h3>
+        <h4 id="titulos">Alguma coisa</h4>
+        <input id="campos" type="text" name="usuario" value="nome do usuário"/>
+        <ol type="I">
+            <li>JS</li>
+            <img src="../assets/images/função2.png"/>
+            <li>Página</li>
+            <img src="../assets/images/função3.png"/>
+        </ol>
+        <h3>Fazendo retorno</h3>
+        <ol type="I">
+            <li>JS</li>
+            <img src="../assets/images/função4.png"/>
+            <li>Página</li>
+            <img src="../assets/images/função5.png"/>
+        </ol>
+
+        <h1 id="area11"><em>Manipulando Atributos</em></h1>
+        <img src="../assets/images/cachorro.jpg"  data-animal="Cachorro" class="imagem"/><br/>
+        <button onclick="trocarImagem('cachorro.jpg', 'Cachorro')">Cachorro</button>
+        <button onclick="trocarImagem('gato.jpg', 'Gato')">Gato</button>
+        <button onclick="pegarAnimal()">Qual é o animal?</button>
+
+        <ol type="I">
+            <li>HTML</li>
+            <img src="../assets/images/mani1.png"/>
+            <li>JS</li>
+            <img src="../assets/images/mani2.png"/>
+        </ol>
+
+        <h1 id="area12"><em>Dimensões</em></h1>
+        <h3>Existem <em>3 grupos</em></h3>
+        <div class="area12">
+        <div>
+        <ol type="I">
+            <li><em>offsetWidth</em> ele em globa largura, padding, border e scrollbar</li>
+            <li><em>offsetHeight</em> ele em globa altura, padding, border e scrollbar</li>
+            <img src="../assets/images/dime1.png"/>
+            <li><em>clientWidth</em> ele em globa largura e padding</li>
+            <li><em>clientHeight</em> ele em globa altura e padding</li></li>
+            <img src="../assets/images/dime2.png"/>
+            <li><em>scrollWidth</em> ele é o tamanho real do conteúdo</li>
+            <li><em>scrollHeight</em> ele é o tamanho real do conteúdo</li>
+            <img src="../assets/images/dime3.png"/>
+        </ol>
+        </div>
+        <div>
+        <h3><em>Elemento de exemplo</em></h3>
+        <div class="texto">
+            Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2000 anos.Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2000 anos.
+            Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2000 anos.Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2000 anos.
+        </div>
+        </div>
+        </div>
+
+
+        <h1 id="area13"><em>Distâncias e Scroll Suave</em></h1>
+        <h3>Onde quer que tenha <em>barra de rolagem</em></h3>
+        <h3><em>Distâncias</em> tanto no elemento espesífico quanto na tela inteira, mostra a posição que o scroll está.</h3>
+        <ol type="I">
+            <li>Se for um elemento <em>selecione</em></li>
+            <li>Se for na tela use <em>window</em></li>
+            <li><em>scrollTop = scroll vertical</em> </li>
+            <img src="../assets/images/scroll1.png"/>
+            <li><em>scrollLeft = scroll horizontal</em></li>
+            <img src="../assets/images/scroll2.png"/>
+            <li><em>window.scrollY = scroll vertical</em></li>
+            <img src="../assets/images/scroll3.png"/>
+            <li><em>window.scrollX = scroll horizonal</em></li>
+            <img src="../assets/images/scroll4.png"/>
+            <li><em>document.querySelector('').scrollTo(x,y) = posiciona o scroll</em></li>
+            <img src="../assets/images/scroll5.png"/>
+            <li><em>window.scrollTo(x,y) = posiciona o scroll</em></li>
+            <img src="../assets/images/scroll6.png"/>
+        </ol>
+        <h3><em>Scrol Suave</em> o scroll sobe lentamente</h3>
+        <ol type="I">
+            <li>HTML</li>
+            <img src="../assets/images/suave1.png"/>
+            <li>JS</li>
+            <img src="../assets/images/suave2.png"/>
+            <li>SCSS</li>
+            <img src="../assets/images/suave3.png"/>
+        </ol>
+
+        <h1 id="area14"><em>Resposta do Exercício Scroll</em></h1>
+        <h3>Como fazer o botão aparecer ou não</h3>
+        <ol type="I">
+            <li>JS</li>
+            <img src="../assets/images/resposta1.png"/>
+            <li>SCSS</li>
+            <img src="../assets/images/resposta2.png"/>
+        </ol>
     </section>
+    <div onclick="subirTela()" class="scrollbotton"></div>
     <script type="text/javascript" src="script.js"></script>
 </body>
